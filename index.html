@@ -3,18 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jumpscare Website</title>
+    <title>Youth Organization</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to the Jumpscare Experience!</h1>
-        <button id="startButton">Start the Experience</button>
-        <div id="jumpscare" class="hidden">
-            <img src="https://raw.githubusercontent.com/Nicsbot12/Jumpscare-/refs/heads/main/Screenshot_20240919_155124.jpg" alt="Scary Image" id="scaryImage">
-            <audio id="scarySound" src="Jumpscare Sound.mp3"></audio>
+    <header>
+        <h1>Youth Organization</h1>
+    </header>
+    <main>
+        <div id="posts"></div>
+        <div id="admin-panel" style="display:none;">
+            <h2>Admin Panel</h2>
+            <form id="post-form">
+                <input type="file" id="image" required>
+                <input type="text" id="text" placeholder="Post text" required>
+                <button type="submit">Upload Post</button>
+            </form>
+            <div id="admin-posts"></div>
         </div>
-    </div>
+        <button id="admin-login-btn">Admin Login</button>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
